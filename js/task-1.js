@@ -6,6 +6,5 @@ titles.forEach(function (item) {
   console.log(`Category: ${item.textContent}`);
 
   const quntityOfItems = item.parentElement.querySelectorAll("ul > li");
-  console.log(quntityOfItems)
   console.log(`Elements: ${quntityOfItems.length}`);
 });
