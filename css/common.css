@@ -13,15 +13,69 @@ body {
   line-height: 1.5;
 }
 
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+h2 {
+  margin-top: 0;
+  margin-bottom: 16px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+  line-height: 1.33333;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+}
+
+.item {
+  background: #f6f6fe;
+  border-radius: 8px;
+  padding: 16px;
+  width: 392px;
+  height: 264px;
+  padding: 16px;
+  margin-bottom: 16px;
+}
+
+.item > ul {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.item > ul > li {
+  border: 1px solid #808080;
+  border-radius: 4px;
+  width: 360px;
+  height: 40px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+  padding: 8px 16px;
+}
+
 .gallery {
   list-style: none;
   display: flex;
   row-gap: 48px;
   column-gap: 24px;
   flex-wrap: wrap;
+  width: 1128px;
 }
 
 img {
+  width: 360px;
+  height: 300px;
+}
+
+ul > li {
   width: calc((100% - 48px) / 3);
 }
 
