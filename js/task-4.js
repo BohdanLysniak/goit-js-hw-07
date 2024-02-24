@@ -4,8 +4,8 @@ form.addEventListener("submit", submitForm);
 function submitForm(event) {
   event.preventDefault();
 
-  const email = event.currentTarget.elements.email.value;
-  const password = event.currentTarget.elements.password.value;
+  const email = event.currentTarget.elements.email.value.trim();
+  const password = event.currentTarget.elements.password.value.trim();
 
   const usersInfo = {
   email,
