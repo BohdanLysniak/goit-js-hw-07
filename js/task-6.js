@@ -12,6 +12,7 @@ const boxes = document.querySelector("#boxes");
 buttonCreate.addEventListener("click", createBoxes);
 buttonDestroy.addEventListener("click", destroyBoxes);
 
+
 function createBoxes(amount) {
   boxes.innerHTML = "";
   amount = input.value;
@@ -21,8 +22,8 @@ function createBoxes(amount) {
       const newDiv = `<div style="width: ${boxsize}px; height: ${boxsize}px; background: ${getRandomHexColor()}"></div>`;
       boxes.insertAdjacentHTML("beforeend", newDiv);
       boxsize += 10;
-      input.value = "";
     }
+    input.value = "";
   }
 }
 

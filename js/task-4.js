@@ -11,11 +11,12 @@ function submitForm(event) {
   email,
   password
 }
-console.log(usersInfo);
   if (email === "" || password === "") {
     alert("All form fields must be filled in")
-  };
+  } else {
+  console.log(usersInfo);
   event.currentTarget.reset();
-}
+  };
+};
 
 
